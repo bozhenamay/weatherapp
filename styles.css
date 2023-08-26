@@ -5,17 +5,18 @@
   border-radius: 12px;
   background: #fff;
   box-shadow: 0px 32px 32px 0px rgba(0, 0, 0, 0.25);
-  display: inline-block;
+  display: block;
+  position: fixed;
 }
 
 input {
   color: rgba(0, 0, 0, 0.25);
-  text-align: left;
   padding: 12px 13px;
-  font-family: Raleway;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 12px;
-  position: absolute;
-  display: inline;
+  position: fixed;
+  display: block;
   margin-left: 40px;
   margin-top: 40px;
   font-style: normal;
@@ -47,7 +48,8 @@ button {
   border: 0px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
   color: #fff;
-  font-family: Raleway;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -72,7 +74,8 @@ button:hover {
 
 h1 {
   color: #000;
-  font-family: Raleway;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
@@ -84,7 +87,8 @@ h1 {
 
 h2 {
   color: rgba(0, 0, 0, 0.75);
-  font-family: Raleway;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -96,7 +100,8 @@ h2 {
 
 h3 {
   color: rgba(0, 0, 0, 0.75);
-  font-family: Raleway;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -108,7 +113,8 @@ h3 {
 
 .temp {
   color: #000;
-  font-family: Raleway;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
@@ -133,7 +139,8 @@ h3 {
 
 .time {
   color: #000;
-  font-family: Raleway;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -176,7 +183,8 @@ h3 {
 .degree {
   background: none;
   color: #000;
-  font-family: Raleway;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -226,7 +234,8 @@ h3 {
 
 .credit {
   color: rgba(0, 0, 0, 0.75);
-  font-family: Raleway;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -238,7 +247,8 @@ h3 {
 
 a {
   color: var(--highlight, #f18ac2);
-  font-family: Raleway;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
