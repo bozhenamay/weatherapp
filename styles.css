@@ -1,0 +1,283 @@
+.weather {
+  width: 648px;
+  height: 560px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 32px 32px 0px rgba(0, 0, 0, 0.25);
+}
+
+input {
+  color: rgba(0, 0, 0, 0.25);
+  text-align: left;
+  padding: 12px 13px;
+  font-family: Raleway;
+  font-size: 12px;
+  position: absolute;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 40px;
+  font-style: normal;
+  border: 0;
+  font-weight: 400;
+  line-height: normal;
+  background: rgba(0, 0, 0, 0.1);
+  width: 400px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  color: #000;
+}
+
+button {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-top: 40px;
+  margin-left: 488px;
+  position: fixed;
+  border-radius: 4px;
+  background: #f18ac2;
+  border: 0px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  color: #fff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+button:hover {
+  transition: all 0.4s ease-in-out;
+  background: #cd76a6;
+  cursor: grab;
+}
+
+.topline {
+  width: 568.01px;
+  height: 0px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+  margin-top: 108px;
+  margin-left: 40px;
+  position: fixed;
+}
+
+h1 {
+  color: #000;
+  font-family: Raleway;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: fixed;
+  margin-top: 136px;
+  margin-left: 40px;
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: fixed;
+  margin-top: 208px;
+  margin-left: 40px;
+}
+
+h3 {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: fixed;
+  margin-top: 228px;
+  margin-left: 40px;
+}
+
+.temp {
+  color: #000;
+  font-family: Raleway;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: fixed;
+  margin-top: 136px;
+  margin-right: 40px;
+  margin-left: 523px;
+}
+
+.forecast {
+  width: 568px;
+  height: 180px;
+  margin-top: 272px;
+  margin-left: 40px;
+  position: fixed;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: rgba(241, 138, 194, 0.1);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.time {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: none;
+}
+
+.now {
+  margin-left: 59.25px;
+  margin-top: 284.25px;
+  position: fixed;
+}
+
+.pm12 {
+  margin-left: 155.25px;
+  margin-top: 284.25px;
+  position: fixed;
+}
+.pm1 {
+  margin-left: 261.75px;
+  margin-top: 284.25px;
+  position: fixed;
+}
+.pm2 {
+  margin-left: 356.25px;
+  margin-top: 284.25px;
+  position: fixed;
+}
+.pm3 {
+  margin-left: 451.25px;
+  margin-top: 284.25px;
+  position: fixed;
+}
+.pm4 {
+  margin-left: 546.25px;
+  margin-top: 284.25px;
+  position: fixed;
+}
+
+.degree {
+  background: none;
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.degree-now {
+  position: fixed;
+  margin-top: 416.25px;
+  margin-left: 66.75px;
+}
+.degree-12 {
+  position: fixed;
+  margin-top: 416.25px;
+  margin-left: 166.75px;
+}
+.degree-1 {
+  position: fixed;
+  margin-top: 416.25px;
+  margin-left: 267.75px;
+}
+.degree-2 {
+  position: fixed;
+  margin-top: 416.25px;
+  margin-left: 363.25px;
+}
+.degree-3 {
+  position: fixed;
+  margin-top: 416.25px;
+  margin-left: 458.25px;
+}
+.degree-4 {
+  position: fixed;
+  margin-top: 416.25px;
+  margin-left: 553.75px;
+}
+
+.bottomline {
+  width: 568.01px;
+  height: 0px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+  margin-top: 480px;
+  margin-left: 40px;
+  position: fixed;
+}
+
+.credit {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: fixed;
+  margin-top: 508px;
+  margin-left: 204px;
+}
+
+a {
+  color: var(--highlight, #f18ac2);
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.sun1 {
+  margin-left: 59.25px;
+  font-size: 40px;
+  position: fixed;
+  margin-top: 340.25px;
+}
+.sun2 {
+  margin-left: 159.25px;
+  font-size: 40px;
+  position: fixed;
+  margin-top: 340.25px;
+}
+.sun3 {
+  margin-left: 260.25px;
+  font-size: 40px;
+  position: fixed;
+  margin-top: 340.25px;
+}
+.sun4 {
+  margin-left: 356.25px;
+  font-size: 40px;
+  position: fixed;
+  margin-top: 340.25px;
+}
+.sun5 {
+  margin-left: 451.25px;
+  font-size: 40px;
+  position: fixed;
+  margin-top: 340.25px;
+}
+.sun6 {
+  margin-left: 546.25px;
+  font-size: 40px;
+  position: fixed;
+  margin-top: 340.25px;
+}
