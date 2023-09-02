@@ -13,20 +13,20 @@
   </head>
   <body>
     <div class="weather">
-      <p class="Search">
-        <input
-          type="text"
-          placeholder="Enter your city"
-          id="fname"
-          name="fname"
-        />
-      </p>
-      <button type="button">Search</button>
+      <form id="search-form">
+        <input id="search-line" type="search" placeholder="Enter your city" />
+        <input id="search-button" type="submit" value="Search" />
+      </form>
       <hr class="topline" />
-      <h1>Warsaw</h1>
-      <h2>Sunday, July 17th, 11:00</h2>
+      <h1 id="city-output">Warsaw</h1>
+      <h2 id="full-date">Sunday, July 17, 11:00</h2>
       <h3>Highest: 28° Lowest: 18°</h3>
-      <p class="temp">26°</p>
+      <p class="temp" id="temp-output">26°</p>
+
+      <span class="measurement">
+        <a href="#" id="celcius">C°</a> | <a href="#" id="fahrenheit">F°</a>
+      </span>
+
       <div class="forecast"></div>
       <div class="time">
         <p class="now">Now</p>

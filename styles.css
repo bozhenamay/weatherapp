@@ -9,7 +9,7 @@
   position: fixed;
 }
 
-input {
+#search-line {
   color: rgba(0, 0, 0, 0.25);
   padding: 12px 13px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -24,21 +24,21 @@ input {
   font-weight: 400;
   line-height: normal;
   background: rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 440px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 }
 
 textarea:focus,
-input:focus {
+#search-line:focus {
   outline: none;
   color: #000;
 }
 
-button {
+#search-button {
   display: inline-block;
   width: 120px;
-  height: 40px;
+  height: 37.6px;
   flex-shrink: 0;
   margin-top: 40px;
   margin-left: 488px;
@@ -56,10 +56,10 @@ button {
   line-height: normal;
 }
 
-button:hover {
+#search-button:hover {
   transition: all 0.4s ease-in-out;
   background: #cd76a6;
-  cursor: grab;
+  cursor: pointer;
 }
 
 .topline {
@@ -123,6 +123,20 @@ h3 {
   margin-top: 136px;
   margin-right: 40px;
   margin-left: 523px;
+}
+
+.measurement {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 150px;
+  margin-right: 142px;
+  margin-left: 475px;
+  position: fixed;
 }
 
 .forecast {
