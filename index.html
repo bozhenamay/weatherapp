@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
     <title>Weather</title>
     <script
       src="https://kit.fontawesome.com/a8f6b0b0a8.js"
@@ -16,18 +18,21 @@
       <form id="search-form">
         <input id="search-line" type="search" placeholder="Enter your city" />
         <input id="search-button" type="submit" value="Search" />
+        <button id="current-button">Current</button>
       </form>
       <hr class="topline" />
-      <h1 id="city-output">Warsaw</h1>
+      <h1 id="city-output">-</h1>
       <h2 id="full-date">Sunday, July 17, 11:00</h2>
-      <h3>Highest: 28° Lowest: 18°</h3>
-      <p class="temp" id="temp-output">26°</p>
+      <h3 id="humidity">Humidity:</h3>
+      <h4 id="wind-speed">Wind speed:</h4>
+      <h5 id="description">Description</h5>
+      <p class="temp" id="temp-output">-°</p>
 
-      <span class="measurement">
+      <!-- <span class="measurement">
         <a href="#" id="celcius">C°</a> | <a href="#" id="fahrenheit">F°</a>
-      </span>
+      </span> -->
 
-      <div class="forecast"></div>
+      <!-- <div class="forecast"></div>
       <div class="time">
         <p class="now">Now</p>
         <p class="pm12">12pm</p>
@@ -52,7 +57,7 @@
         <p class="degree-3">27°</p>
         <p class="degree-4">28°</p>
       </div>
-      <hr class="bottomline" />
+      <hr class="bottomline" /> -->
 
       <p class="source">
         <a href="https://github.com/bozhenamay/weatherapp" target="_blank"

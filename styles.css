@@ -1,10 +1,10 @@
 .weather {
   width: 648px;
-  height: 560px;
+  height: 360px;
   flex-shrink: 0;
   border-radius: 12px;
   background: #fff;
-  box-shadow: 0px 32px 32px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: block;
   position: fixed;
 }
@@ -24,7 +24,7 @@
   font-weight: 400;
   line-height: normal;
   background: rgba(0, 0, 0, 0.1);
-  width: 440px;
+  width: 312px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 }
@@ -36,6 +36,33 @@ textarea:focus,
 }
 
 #search-button {
+  display: inline-block;
+  width: 120px;
+  height: 37.6px;
+  flex-shrink: 0;
+  margin-top: 40px;
+  margin-left: 360px;
+  position: fixed;
+  border-radius: 4px;
+  background: #f18ac2;
+  border: 0px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#search-button:hover {
+  transition: all 0.4s ease-in-out;
+  background: #cd76a6;
+  cursor: pointer;
+}
+
+#current-button {
   display: inline-block;
   width: 120px;
   height: 37.6px;
@@ -56,7 +83,7 @@ textarea:focus,
   line-height: normal;
 }
 
-#search-button:hover {
+#current-button:hover {
   transition: all 0.4s ease-in-out;
   background: #cd76a6;
   cursor: pointer;
@@ -111,6 +138,32 @@ h3 {
   margin-left: 40px;
 }
 
+h4 {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: fixed;
+  margin-top: 248px;
+  margin-left: 40px;
+}
+
+h5 {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: fixed;
+  margin-top: 268px;
+  margin-left: 40px;
+}
+
 .temp {
   color: #000;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -122,7 +175,7 @@ h3 {
   position: fixed;
   margin-top: 136px;
   margin-right: 40px;
-  margin-left: 523px;
+  margin-left: 465px;
 }
 
 .measurement {
@@ -255,7 +308,7 @@ h3 {
   font-weight: 400;
   line-height: normal;
   position: fixed;
-  margin-top: 508px;
+  margin-top: 308px;
   margin-left: 204px;
 }
 
