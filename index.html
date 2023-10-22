@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-
     <title>Weather</title>
     <script
       src="https://kit.fontawesome.com/a8f6b0b0a8.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <div class="weather">
       <form id="search-form">
@@ -20,44 +20,22 @@
         <input id="search-button" type="submit" value="Search" />
         <button id="current-button">Current</button>
       </form>
+
       <hr class="topline" />
+
       <h1 id="city-output">-</h1>
       <h2 id="full-date">Sunday, July 17, 11:00</h2>
       <h3 id="humidity">Humidity:</h3>
       <h4 id="wind-speed">Wind speed:</h4>
       <h5 id="description">Description</h5>
+
       <p class="temp" id="temp-output">-°</p>
 
-      <!-- <span class="measurement">
+      <span class="measurement">
         <a href="#" id="celcius">C°</a> | <a href="#" id="fahrenheit">F°</a>
-      </span> -->
-
-      <!-- <div class="forecast"></div>
-      <div class="time">
-        <p class="now">Now</p>
-        <p class="pm12">12pm</p>
-        <p class="pm1">1pm</p>
-        <p class="pm2">2pm</p>
-        <p class="pm3">3pm</p>
-        <p class="pm4">4pm</p>
-      </div>
-
-      <span class="sun1"><i class="fa-regular fa-sun"></i></span>
-      <span class="sun2"><i class="fa-regular fa-sun"></i></span>
-      <span class="sun3"><i class="fa-regular fa-sun"></i></span>
-      <span class="sun4"><i class="fa-regular fa-sun"></i></span>
-      <span class="sun5"><i class="fa-regular fa-sun"></i></span>
-      <span class="sun6"><i class="fa-regular fa-sun"></i></span>
-
-      <div class="degree">
-        <p class="degree-now">26°</p>
-        <p class="degree-12">27°</p>
-        <p class="degree-1">27°</p>
-        <p class="degree-2">27°</p>
-        <p class="degree-3">27°</p>
-        <p class="degree-4">28°</p>
-      </div>
-      <hr class="bottomline" /> -->
+      </span>
+      <img src="" alt="Clear" id="icon" class="float-left" />
+      <hr class="bottomline" />
 
       <p class="source">
         <a href="https://github.com/bozhenamay/weatherapp" target="_blank"
