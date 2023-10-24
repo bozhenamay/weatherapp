@@ -42,15 +42,16 @@ let fullDate = document.querySelector("#full-date");
 fullDate.innerHTML = `${day}, ${month} ${date}, ${hour}:${minutes}`;
 
 function displayWeatherCondition(response) {
+  let temperatureElement = document.querySelector("#temp-output");
+  celsiusTemperature = response.data.main.temp;
+
   document.querySelector("#city-output").innerHTML = response.data.name;
-  document.querySelector("#temp-output").innerHTML = `${Math.round(
-    response.data.main.temp
-  )}°C`;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
   document.querySelector(
     "#humidity"
   ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
   document.querySelector("#wind-speed").innerHTML = `Wind speed: ${Math.round(
-    response.data.wind.speed
+    response.data.wind.speed * 3.6
   )} km/h`;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
@@ -91,8 +92,27 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temp-output");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temp-output");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+let fahrenheitLink = document.querySelector("a#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("a#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
