@@ -1,5 +1,4 @@
 let now = new Date();
-
 let hour = now.getHours();
 let date = now.getDate();
 
@@ -9,6 +8,7 @@ function addZero(i) {
   }
   return i;
 }
+
 let minutes = addZero(now.getMinutes());
 
 let days = [
@@ -20,6 +20,7 @@ let days = [
   "Friday",
   "Saturday",
 ];
+
 let day = days[now.getDay()];
 
 let months = [
@@ -36,6 +37,7 @@ let months = [
   "November",
   "December",
 ];
+
 let month = months[now.getMonth()];
 
 let fullDate = document.querySelector("#full-date");
@@ -44,7 +46,6 @@ fullDate.innerHTML = `${day}, ${month} ${date}, ${hour}:${minutes}`;
 function displayWeatherCondition(response) {
   let temperatureElement = document.querySelector("#temp-output");
   celsiusTemperature = response.data.main.temp;
-
   document.querySelector("#city-output").innerHTML = response.data.name;
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   document.querySelector(
@@ -83,7 +84,6 @@ function searchLocation(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
-
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
