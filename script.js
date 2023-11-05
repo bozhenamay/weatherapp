@@ -1,8 +1,8 @@
-let currentTemperature; // Define a global variable for temperature
+let currentTemperature;
 
 function displayWeatherCondition(response) {
   let temperatureElement = document.querySelector("#temperature");
-  currentTemperature = response.data.temperature.current; // Store the temperature
+  currentTemperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
