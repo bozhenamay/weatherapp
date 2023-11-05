@@ -6,7 +6,7 @@ h1 {
   font-weight: 700;
   line-height: normal;
   position: fixed;
-  margin-top: 128px;
+  margin-top: 130px;
   margin-left: 40px;
 }
 
@@ -18,7 +18,7 @@ h2 {
   font-weight: 400;
   line-height: normal;
   position: fixed;
-  margin-top: 194px;
+  margin-top: 195px;
   margin-left: 40px;
 }
 
@@ -30,7 +30,7 @@ h3 {
   font-weight: 400;
   line-height: normal;
   position: fixed;
-  margin-top: 214px;
+  margin-top: 215px;
   margin-left: 40px;
 }
 
@@ -42,7 +42,7 @@ h4 {
   font-weight: 400;
   line-height: normal;
   position: fixed;
-  margin-top: 234px;
+  margin-top: 235px;
   margin-left: 40px;
 }
 
@@ -54,7 +54,7 @@ h5 {
   font-weight: 400;
   line-height: normal;
   position: fixed;
-  margin-top: 254px;
+  margin-top: 255px;
   margin-left: 40px;
 }
 
@@ -69,27 +69,32 @@ a {
 }
 
 .weather {
-  width: 648px;
-  height: 362px;
+  width: 650px;
+  height: 360px;
   flex-shrink: 0;
   border-radius: 12px;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: block;
-  position: fixed;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .topline {
-  width: 568px;
+  width: 570px;
   height: 0px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
   border: 1px rgba(0, 0, 0, 0.1) solid;
-  margin-top: 108px;
+  margin-top: 110px;
   margin-left: 40px;
   position: fixed;
 }
 
-.temp {
+.temperature {
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
@@ -97,8 +102,8 @@ a {
   font-weight: 700;
   line-height: normal;
   position: fixed;
-  margin-top: 123px;
-  margin-left: 551px;
+  margin-top: 125px;
+  margin-left: 550px;
   margin-right: 40px;
 }
 
@@ -109,18 +114,18 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 136px;
+  margin-top: 135px;
   margin-right: 135px;
-  margin-left: 482px;
+  margin-left: 480px;
   position: fixed;
 }
 
 .bottomline {
-  width: 568px;
+  width: 570px;
   height: 0px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
   border: 1px rgba(0, 0, 0, 0.1) solid;
-  margin-top: 288px;
+  margin-top: 290px;
   margin-left: 40px;
   position: fixed;
 }
@@ -133,8 +138,40 @@ a {
   font-weight: 400;
   line-height: normal;
   position: fixed;
-  margin-top: 308px;
-  margin-left: 218px;
+  margin-top: 310px;
+  margin-left: 220px;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-icon {
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  color: #f65282;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-forecast-temperature {
+  padding: 0 10px;
 }
 
 #search-line {
@@ -151,7 +188,7 @@ a {
   font-weight: 400;
   line-height: normal;
   background: rgba(0, 0, 0, 0.1);
-  width: 312px;
+  width: 310px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 }
@@ -165,7 +202,7 @@ textarea:focus,
 #search-button {
   display: inline-block;
   width: 120px;
-  height: 37.6px;
+  height: 40px;
   flex-shrink: 0;
   margin-top: 40px;
   margin-left: 360px;
@@ -191,7 +228,7 @@ textarea:focus,
 #current-button {
   display: inline-block;
   width: 120px;
-  height: 37.6px;
+  height: 40px;
   flex-shrink: 0;
   margin-top: 40px;
   margin-left: 488px;
@@ -218,7 +255,7 @@ textarea:focus,
   position: fixed;
   margin-top: 160px;
   margin-right: 40px;
-  margin-left: 488px;
+  margin-left: 490px;
   height: 120px;
   width: 120px;
 }

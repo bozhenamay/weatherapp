@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Weather</title>
-    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@0.21.1/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="weather">
@@ -17,18 +17,18 @@
       </form>
       <hr class="topline" />
 
-      <h1 id="city-output">-</h1>
+      <h1 id="city">-</h1>
       <h2 id="full-date">Sunday, July 17, 11:00</h2>
       <h3 id="humidity">Humidity:</h3>
       <h4 id="wind-speed">Wind speed:</h4>
       <h5 id="description">Description</h5>
-      <p class="temp" id="temp-output">-</p>
+      <p class="temperature" id="temperature">-</p>
 
       <span class="measurement">
         <a href="#" id="celsius-link">C°</a> |
         <a href="#" id="fahrenheit-link">F°</a>
       </span>
-      <img src="" alt="Clear" id="icon" class="float-left" />
+      <div id="icon"></div>
       <hr class="bottomline" />
 
       <p class="source">
